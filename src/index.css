@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter Italic";
+    src: url("/fonts/InterVariable-Italic.woff2") format("woff2");
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #181818;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
