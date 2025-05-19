@@ -53,12 +53,12 @@ export default function App() {
     <>
       <Header />
 
-      <main className="w-2/4 p-6 rounded-2xl bg-[#f0f0e6]">
-        <section className="grid grid-cols-5 grid-rows-2 gap-6">
+      <main className="w-5/6 md:w-2/4 p-6 rounded-2xl bg-[#f0f0e6]">
+        <section className="grid grid-cols-2 md:grid-cols-5 gap-6">
           <div className="col-span-full flex flex-col gap-4">
             <h1 className="text-4xl text-center text-[#de0607]">Tenzies</h1>
 
-            <p className="w-2/4 m-auto text-xl text-center">
+            <p className="md:w-2/4 m-auto text-xl text-center">
               Pick a number, save matching dice after each roll, and be first to
               get all ten showing the same value.
             </p>
@@ -78,7 +78,7 @@ export default function App() {
             ref={newGameRef}
             type="button"
             onClick={handleRoll}
-            className="col-span-3 col-start-2 p-4 rounded-2xl border-b-6 border-blue-700 text-2xl text-white bg-blue-500 cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-4"
+            className="col-span-full md:col-span-3 md:col-start-2 p-4 rounded-2xl border-b-6 border-blue-700 text-2xl text-white bg-blue-500 cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-4"
           >
             {gameWon ? "New Game" : "Roll"}
           </button>
