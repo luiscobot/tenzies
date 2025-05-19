@@ -53,12 +53,12 @@ export default function App() {
     <>
       <Header />
 
-      <main className="w-5/6 md:w-2/4 p-6 rounded-2xl bg-[#f0f0e6]">
+      <main className="p-6 rounded-2xl bg-[#f0f0e6]">
         <section className="grid grid-cols-2 md:grid-cols-5 gap-6">
-          <div className="col-span-full flex flex-col gap-4">
+          <div className="col-span-full flex flex-col items-center gap-4">
             <h1 className="text-4xl text-center text-[#de0607]">Tenzies</h1>
 
-            <p className="md:w-2/4 m-auto text-xl text-center">
+            <p className="md:w-2/4 text-xl text-center">
               Pick a number, save matching dice after each roll, and be first to
               get all ten showing the same value.
             </p>
